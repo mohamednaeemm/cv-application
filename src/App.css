@@ -1,0 +1,134 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 198, 217);
+}
+
+.container-header {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    gap: 2rem;
+    background-color: rgb(49, 178, 192);
+}
+
+.container-body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 60%;
+}
+
+.container-body-cv {
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section.personal {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+  }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+  
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+  
+form div label {
+    margin-bottom: 5px;
+}
+  
+form div input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+form div input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+  
+form div, .submitted-data p {
+    margin-bottom: 10px;
+}
+
+
+form button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    margin-top: 1.4rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+
+.submitted-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.submitted-data p {
+    min-width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-right: 1rem;
+}
+
+.edit-button {
+    padding: 8px 12px;
+    width: 20%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+  
