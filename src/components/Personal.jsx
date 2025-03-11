@@ -53,7 +53,7 @@ const Personal = () => {
             <input type="url" id="portfolio" name="portfolio" value={formData.portfolio} onChange={handleChange} />
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="submit">Submit</button>
           </div>
         </form>
       ) : (
@@ -62,10 +62,11 @@ const Personal = () => {
             <div>
                 <p>
                     <strong>
-                        eferrer">Portfolio</a>
+                    {formData.name} | {formData.address} | {formData.email} | <a href={formData.linkedin} target="_blank" rel="noopener noreferrer">Linkedin</a> | <a href={formData.github} target="_blank" rel="noopener noreferrer">Github</a> | <a href={formData.portfolio} target="_blank" rel="noopener noreferrer">Portfolio
+                    </a>
                     </strong>
                 </p>
-          </div>
+            </div>
             <hr />
           <button className="edit-button" onClick={() => setIsEditing(true)}>Edit</button>
         </div>

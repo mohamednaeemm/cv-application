@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Personal from './components/Personal';
+import Summary from './components/Summary';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <div className="container-body">
             <div className="container-body-cv">
                 <Personal />
+                <Summary />
             </div>
         </div>
 
