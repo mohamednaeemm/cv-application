@@ -17,23 +17,24 @@ function App() {
     }
 
     try {
-      // Temporarily hide the header
+      // Hide header and edit buttons
       const header = document.querySelector('.container-header');
+      const editButtons = document.querySelectorAll('.edit-button');
       if (header) header.style.display = 'none';
+      editButtons.forEach((button) => (button.style.display = 'none'));
 
       const canvas = await html2canvas(componentRef.current, {
-        scale: 2, // Higher resolution
-        useCORS: true, // Handle cross-origin issues if any
+        scale: 2,
+        useCORS: true,
       });
-
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
         format: 'a4',
       });
-      const imgWidth = 210; // A4 width in mm
-      const pageHeight = 297; // A4 height in mm
+      const imgWidth = 210;
+      const pageHeight = 297;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       let heightLeft = imgHeight;
       let position = 0;
@@ -49,10 +50,10 @@ function App() {
       }
 
       pdf.save('My_CV.pdf');
-      console.log('PDF downloaded');
 
-      // Restore header visibility
+      // Restore visibility
       if (header) header.style.display = 'flex';
+      editButtons.forEach((button) => (button.style.display = ''));
     } catch (error) {
       console.error('Error generating PDF:', error);
     }

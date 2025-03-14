@@ -4,16 +4,6 @@
     padding: 0;
 }
 
-@media print {
-    .downloadPDF {
-      display: none;
-    }
-    .container-header {
-      display: none; /* Optionally hide the entire header */
-    }
-  }
-  
-  /* Existing styles */
 .container {
     display: flex;
     flex-direction: column;
@@ -410,3 +400,22 @@ hr {
 }
 
 
+@media print {
+    .downloadPDF {
+      display: none;
+    }
+    .container-header {
+      display: none; 
+    }
+
+    .container {
+        padding: 0;
+    }
+    .container-body {
+        margin: 0;
+    }
+    .edit-button {
+        display: none;
+    }
+      
+}
