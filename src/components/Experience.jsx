@@ -63,7 +63,7 @@ const Experience = () => {
             <h2>Work Experience</h2>
             <hr />
             {isEditing ? (
-                <div className="edit-mode">
+                <div className="editexp-mode">
                     <button className="add-experience-button" onClick={addExperience}>
                         Add Experience
                     </button>
@@ -146,12 +146,16 @@ const Experience = () => {
                     </button>
                 </div>
             ) : (
-                <div className="display-mode">
+                <div className="displayexp-mode">
                     {experiences.map((exp, index) => (
-                        <div key={index} className="experience-item">
-                            <h3>{exp.companyName}</h3>
+                        <div key={index} className="experience-item"><div className='experience-item-content'><div>
+                            <h3>-{exp.companyName.trim()},</h3>
                             <p>{exp.location}</p>
+                            </div>
+                            <div>
                             <p>{exp.startYear} - {exp.isPresent ? 'Present' : exp.endYear}</p>
+                            </div>
+                            </div>
                             <ul>
                                 {exp.achievements.map((ach, i) => (
                                     <li key={i}>{ach}</li>

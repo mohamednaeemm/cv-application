@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+@media print {
+    .downloadPDF {
+      display: none;
+    }
+    .container-header {
+      display: none; /* Optionally hide the entire header */
+    }
+  }
+  
+  /* Existing styles */
 .container {
     display: flex;
     flex-direction: column;
@@ -28,13 +38,24 @@
     margin-bottom: 2rem;
 }
 
-.container-body-cv {
+.downloadPDF {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.container-body-cv {    
     width: 100%;
     padding: 1rem;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* =============Personal============== */
 
@@ -215,7 +236,7 @@ hr {
 }
 
 .experience-form {
-    margin: 20px 0;
+    margin: 0;
     padding: 15px;
     border: 1px solid #eee;
     border-radius: 5px;
@@ -248,7 +269,8 @@ hr {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 1rem 0;
+    margin-right: 1rem;
 }
 
 .add-achievement {
@@ -279,12 +301,112 @@ hr {
 }
 
 .experience-item {
-    margin: 20px 0;
     padding: 15px;
-    border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.experience-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.experience-item-content div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .present-checkbox {
     margin: 10px 0;
 }
+
+/* =============Projects============== */
+
+.projects {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+}
+
+.editpro-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+}
+
+.project-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+.project-form textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+}
+
+.project-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.delete-project {
+    background-color: #f44336;
+    width: fit-content;
+}
+
+.add-project-button {
+    background-color: #4CAF50;
+    margin-top: 1rem;
+}
+
+.displayproject-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-item-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-item-content h4 {
+    font-size: 1rem;
+}
+
+.project-item-content p {
+    font-size: 0.8rem;
+}
+
+.project-item-content a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #007bff;
+}
+
+
