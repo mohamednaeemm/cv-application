@@ -19,6 +19,8 @@ const Summary = () => {
 
   return (
     <div className="section summary">
+        <h2>Summary</h2>
+        <hr />
       {isEditing ? (
         // Edit Mode
         <>
@@ -36,7 +38,6 @@ const Summary = () => {
                 <p>
                     {summary }
                 </p>
-                <hr />
                 <button className="edit-button" onClick={() => setIsEditing(true)}>Edit
                 </button>
         </div>

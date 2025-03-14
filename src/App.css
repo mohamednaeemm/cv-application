@@ -23,7 +23,6 @@
 
 .container-body {
     display: flex;
-    flex: 1;
     justify-content: center;
     width: 60%;
     margin-bottom: 2rem;
@@ -78,6 +77,7 @@ form div input:focus {
 
 button {
     padding: 8px 12px;
+    margin: 0 auto;
     width: 20%;
     border: none;
     background-color: #007bff;
@@ -89,7 +89,7 @@ button {
 
 
 form .submit {
-    margin-top: 1.4rem;
+    margin-top: 0.5rem;
     width: 70%;
 }
   
@@ -130,7 +130,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 1rem;
 }
 
 .summary-content {
@@ -169,6 +169,122 @@ hr {
     border-color: #007bff;
   }
 
-  /* =============Experience============== */
+  /* =============Skills============== */
   
+.technical-skills {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
 
+.skill-content {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skill-content input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills-content div {
+    display: flex;
+    gap: 1rem;
+}
+
+/* =============Experience============== */
+
+.experience {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.experience-form {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-form input {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-achievement {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-experience-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.add-achievement {
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-experience {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-button, .edit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.experience-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.present-checkbox {
+    margin: 10px 0;
+}
