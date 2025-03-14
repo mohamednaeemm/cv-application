@@ -1,6 +1,6 @@
 # CV Generator
 
-[**Live Demo**](https://your-live-demo-url.com) <!-- Replace with your actual live URL -->
+[**Live Demo**](https://cv-application-beta-eight.vercel.app/) <!-- Replace with your actual live URL -->
 
 A React-based web application to create and download a professional CV as a PDF. Users can input personal information, a summary, technical skills, and projects, then generate a printable CV without edit buttons in the final PDF.
 
